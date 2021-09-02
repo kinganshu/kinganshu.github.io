@@ -1,0 +1,203 @@
+
+body{
+    font-family: sans-serif;
+    padding-left:10%;
+    padding-right:10%;
+    background-color: var(--color-background);
+
+}
+
+* {
+	box-sizing: border-box;
+     /* border: 2px solid black;  */
+    
+}
+
+.theme-light{
+    --color-background: #ffffff;
+    --color-highlight: #7778797e;
+    --color-text: #45A29E;
+}
+
+.theme-dark{
+    --color-background: #1F2833;
+    --color-highlight: #66FCF1;
+    --color-text: #FFFFFF;
+
+}
+
+.checkbox {
+	opacity: 0;
+    top:10%;
+	position: relative;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+.fa-github-square{
+    color: var(--color-highlight);
+    font-size: 8vw;
+}
+.fa-instagram{
+    color: var(--color-highlight);
+    font-size: 8vw;
+}
+.fa-spotify{
+    color: var(--color-highlight);
+    font-size: 8vw;
+}
+
+
+.fa-envelope{
+    color: var(--color-highlight);
+    font-size: 8vw;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.zoom{
+    transition: transform .2s;
+}
+.zoom:hover {
+  transform: scale(1.05);
+}
+
+
+.toggle{
+    margin:0;
+    padding:0;
+    position: absolute;
+    top:0;
+    left:5%;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding:0;
+}
+.avatar img{
+    width:12rem;
+    height:auto;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0;
+    margin:0;
+}
+.hello{
+    margin:0;
+    padding:0;
+    color: var(--color-highlight);
+    font-size: 6.5rem;
+    line-height: 5.7rem;
+}
+ .normal-text{
+    color: var(--color-text);
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+.highlight-text{
+    color: var(--color-highlight);
+    font-size: 1.5rem;
+    font-weight: 1000;
+
+} 
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "spscl attr attr"
+    "spscl attr attr";
+    margin: 0;
+}
+
+.spscl {
+     grid-area: spscl; 
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+}
+
+.attr {
+     grid-area: attr; 
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-end;
+}
+
+
+
+
+
+.typewriter h1 {
+    
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid var(--color-text); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+  color: var(--color-highlight);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--color-text); }
+}
