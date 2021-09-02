@@ -71,21 +71,21 @@ body{
 }
 .fa-github-square{
     color: var(--color-highlight);
-    font-size: 8vw;
+    font-size: 6vw;
 }
 .fa-instagram{
     color: var(--color-highlight);
-    font-size: 8vw;
+    font-size: 6vw;
 }
 .fa-spotify{
     color: var(--color-highlight);
-    font-size: 8vw;
+    font-size: 6vw;
 }
 
 
 .fa-envelope{
     color: var(--color-highlight);
-    font-size: 8vw;
+    font-size: 6vw;
 }
 
 footer{
