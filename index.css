@@ -201,3 +201,11 @@ footer{
   from, to { border-color: transparent }
   50% { border-color: var(--color-text); }
 }
+
+hr{
+    border:none;
+    width:50%;
+    background-color:var(--color-highlight);
+    height: 3px;
+
+}
