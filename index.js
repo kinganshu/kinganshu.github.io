@@ -11,7 +11,7 @@ chk.addEventListener('change', () => {
 });
 
 
-var messages=["HELLO","WORLD","XD"];
+var messages=["HELLO","WORLD"];
 var rank=0;
 
 // Code for Chrome, Safari and Opera
